@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>INTEGRA.kml</name>
+	<StyleMap id="msn_Mapas1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Mapas</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Mapas1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_Mapas0">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_Mapas0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Mapas2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Mapas0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_Mapas1">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_Mapas">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Mapas0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Mapas</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_Mapas00">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Mapas1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Mapas000</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_Mapas">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_Mapas000">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_Mapas10">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_Mapas00">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_Mapas">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sn_Mapas2">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<StyleMap id="msn_Mapas000">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_Mapas10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_Mapas00</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_Mapas1">
+		<IconStyle>
+			<scale>1.2</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Style id="sh_Mapas0">
+		<IconStyle>
+			<scale>1.4</scale>
+			<Icon>
+				<href>Mapas.png</href>
+			</Icon>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Integrações</name>
+		<Placemark>
+			<name>INTEGRAÇÃO 1</name>
+			<description>RODOVIÁRIA</description>
+			<LookAt>
+				<longitude>-49.8852814890352</longitude>
+				<latitude>-6.076738545329645</latitude>
+				<altitude>0</altitude>
+				<heading>14.38052872663975</heading>
+				<tilt>18.06586694288426</tilt>
+				<range>402.6500529371347</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas1</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.88479497347789,-6.076679247098279,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 2</name>
+			<LookAt>
+				<longitude>-49.88250072324622</longitude>
+				<latitude>-6.049058873747466</latitude>
+				<altitude>0</altitude>
+				<heading>0.08049477052675753</heading>
+				<tilt>12.84629068605162</tilt>
+				<range>781.121975140084</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.88393022980216,-6.047945273022319,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 3</name>
+			<LookAt>
+				<longitude>-49.91440821053293</longitude>
+				<latitude>-6.063759923837898</latitude>
+				<altitude>0</altitude>
+				<heading>0.05459600580330039</heading>
+				<tilt>26.63160651069091</tilt>
+				<range>336.5998562848236</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.91483002236479,-6.064007011437218,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 4</name>
+			<LookAt>
+				<longitude>-49.90522295465583</longitude>
+				<latitude>-6.067729271594154</latitude>
+				<altitude>0</altitude>
+				<heading>0.02410708071579904</heading>
+				<tilt>30.00144964217719</tilt>
+				<range>322.8605692265658</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.90545911004716,-6.06829463386904,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 5</name>
+			<LookAt>
+				<longitude>-49.88590080951407</longitude>
+				<latitude>-6.08183732709744</latitude>
+				<altitude>0</altitude>
+				<heading>-0.01865757658598291</heading>
+				<tilt>31.89377824375802</tilt>
+				<range>593.5970773216127</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas00</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.88695001092534,-6.082127143583541,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 6</name>
+			<LookAt>
+				<longitude>-49.88596697724794</longitude>
+				<latitude>-6.083413753778859</latitude>
+				<altitude>0</altitude>
+				<heading>14.39792654363141</heading>
+				<tilt>28.44742972943387</tilt>
+				<range>420.3044730882887</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.88681940041086,-6.083833519341904,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRAÇÃO 7</name>
+			<LookAt>
+				<longitude>-49.85710826155504</longitude>
+				<latitude>-6.091093949689301</latitude>
+				<altitude>0</altitude>
+				<heading>0.03598557940947444</heading>
+				<tilt>30.00104208513532</tilt>
+				<range>232.0625287711619</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas000</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.8571667683841,-6.091474014143557,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>INTEGRÇÃO 8</name>
+			<description>2 lados</description>
+			<LookAt>
+				<longitude>-49.87130322731252</longitude>
+				<latitude>-6.056844485512158</latitude>
+				<altitude>0</altitude>
+				<heading>14.37561346258476</heading>
+				<tilt>23.56316112337172</tilt>
+				<range>479.3855721612995</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_Mapas0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-49.87030023786929,-6.056843074706562,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Document>
+</kml>
