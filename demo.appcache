@@ -5,7 +5,7 @@ NETWORK:
 *
 
 CACHE:
-index.php
+index.html
 jquery-mobile-145.css
 stilo.css
 js/jquery-1.11.2.js
