@@ -43,17 +43,53 @@ td {    border-right: 1px solid lightgray;}
 </style>
 
 <div id="principal">
-                                                            
-            <div data-role="page" id="rotas" style="background: url('fundo.jpg') center center; background-size:cover;">
+
+            <div data-role="page" id="rotas">
             <div data-role="header">
-                <h1>PARAUAPEBAS </h1>
-           <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
+                <h1>PARAUAPEBAS </h1>    
+				<a href="#config" class="ui-btn ui-corner-all ui-shadow ui-icon-gear  ui-btn-icon-notext" data-transition="slide">Config</a>
+				<a href="#info" class="ui-btn ui-corner-all ui-shadow ui-icon-info  ui-btn-icon-notext" data-transition="slide">Início</a>
+										
             </div>
-            <div  class="ui-content" >
-                <center><img src="simbolo.png" width="135px"><BR>
+	
+						             <div data-role="panel" id="config" data-position="left"> 
+                                            <h2>Definições</h2>
+											<p>Sempre que possível verifique novas atualizações.</p>
+											<p>Rotas: 11<BR>
+											Destinos: 30</p>
+                                       <b style="color:red;">Sua versão: 1.1</b><BR>
+                                       <b style="color:green;"><a href="http://gtransp.esy.es/app/versao.php" target="_Blank">Verificar Atualização</a></b><BR><BR>
+									   <p><small>Desenvolvido por:<BR> <B>Jorge Clésio</b></small></p>
+                                       
+                                          <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
+                                    </div> 	
+									  
+									 <div data-role="panel" id="info" data-position="right"> 
+                                            <h2>Informações</h2>
+											<p><b>Início</b></p>
+											<p>Na abertura você poderá ter acesso a todas as rotas, comandos e informações das Integrações.</p>	
+
+											<p><b>Destinos</b></p>
+											<p>Em destinos você se encontra facilmente fornecendo apenas sua localidade. É compostos de várias possibilidades de destinos para você (Esteja sempre verificando atualizações, a partir delas que são gerados novas possibilidades.).</p>
+											
+											
+											<p><b>Sua Integração</b></p>
+											<p>Lhe ajudará no momentos em que se encontrar em alguma Integração. Você pode verificar as rotas que terão acesso a ela e, também vizualizá-las.</p>
+											
+											
+											
+                                       <b style="color:red;">Sua versão: 1.1</b><BR>
+                                       <b style="color:green;"><a href="http://gtransp.esy.es/app/versao.php" target="_Blank">Verificar Atualização</a></b><BR><BR>
+                                      
+                                          <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
+                                    </div> 	
+			
+			
+            <div  class="ui-content"  style="background: url('fundo.jpg') center center; background-size:cover;">
+                <center><img src="simbolo.png" width="120px"><BR>
 <!-- <div style="height:100px; width:100%; margin:-15px;margin-rigth:-15px;position:absolute;  background: url('fundo_app.jpg') center  no-repeat; box-shadow: 4px 3px 5px #999999;"></div> -->
             <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR><BR> -->
-                 <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:35px; " data-transition="flip">Destinos</a>
+                 <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:35px; " data-transition="slide">Destinos</a>
                 <a href="#local" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-location ui-btn-icon-left "  style="padding:5px; padding-left:35px; " data-transition="slide">Sua Integração</a></center>
                     <div data-role="content" class="ui-shadow">	
                         Abaixo você pode visitar as rotas que compõem o transporte municipal ☟.
@@ -61,20 +97,19 @@ td {    border-right: 1px solid lightgray;}
                                 <div data-role="collapsible">
                                     <h2>Todas as rotas...</h2>
                                       <ul data-role="listview" data-inset="true">
-                                        <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                        <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                        <li><a href="#rotas-a1">A001<p>LIBERDADE - CIDADE NOVA</p></a></li>
-                                        <li><a href="#rotas-a2">A002<p>NOVA CARAJÁS - SHOPPING - W TORRES - AMAZONIA - NOVO BRASIL</p></a></li>
-                                        <li><a href="#rotas-a4">A004<p>ESTAÇÃO MINÉRIOS - HABITAR FELIZ</p></a></li>
-                                        <li><a href="#rotas-a5">A005<p>ESTAÇÃO SHOPPING - UFRA</p></a></li>
-                                        <li><a href="#rotas-ib1">IB001<p>VS 10→DA PAZ→RIO VERDE→CIDADE NOVA</p></a></li>
-                                        <li><a href="#rotas-ib2">IB002<p>HABITAR FELIZ - ALTAMIRA - PREFEITURA - RODOVIÁRIA</p></a></li>
+                                        <li><a href="#rotas-t1">T001<p>MINÉRIOS→CIDADE JARDIM→RODOVIARIA→CIDADE NOVA→RIO VERDE→DA PAZ</p></a></li>
+                                        <li><a href="#rotas-t2">T002<p>MINÉRIOS→CIDADE JARDIM→DA PAZ→RIO VERDE→CIDADE NOVA</p></a></li>
+                                        <li><a href="#rotas-a1">A001<p>LIBERDADE⇆CIDADE NOVA</p></a></li>
+                                        <li><a href="#rotas-a2">A002<p>NOVA CARAJÁS→SHOPPING→W TORRES→AMAZONIA→NOVO BRASIL</p></a></li>
+                                        <li><a href="#rotas-a5">A005<p>ESTAÇÃO SHOPPING⇆UFRA</p></a></li>
+                                        <li><a href="#rotas-ib1-nv">IB001-NV<p>VS 10→NOVA VIDA→DA PAZ→RIO VERDE→CIDADE NOVA</p></a></li>
+                                        <li><a href="#rotas-ib1-bv">IB001-BV<p>VS 10→BELA VISTA→DA PAZ→RIO VERDE→CIDADE NOVA</p></a></li>
+                                        <li><a href="#rotas-ib2">IB002<p>HABITAR FELIZ→ALTAMIRA→PREFEITURA→RODOVIÁRIA</p></a></li>
                                         <li><a href="#rotas-ib3">IB003<p>JARDIM TROPICAL→ALTAMIRA→CIDADE NOVA</p></a></li>
-                                        <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                        <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
+                                        <li><a href="#rotas-c1">C001<p>MINÉRIOS→BEIRA RIO→DA PAZ→CIDADE NOVA→ALTAMIRA</p></a></li>
+                                        <li><a href="#rotas-c2">C002 <p>MINÉRIOS→ALTAMIRA→CIDADE NOVA→RIO VERDE→GUANABARA→BEIRA RIO</p></a></li>
                                         </ul>
                                 </div>
-
                                 <div data-role="collapsible">
                                     <h2>Local/Integrações...</h2>
                                       <ol data-role="listview" >
@@ -91,7 +126,7 @@ td {    border-right: 1px solid lightgray;}
                     </div>
             </div>
                 <div data-role="footer" class="ui-footer">
-                <h5>©</h5>
+                <h3> © <small>Jorge Clésio</small></h3>
                 </div>
             </div>    
                     
@@ -117,7 +152,7 @@ td {    border-right: 1px solid lightgray;}
                                           <ul data-role="listview" data-inset="true" >
                                             <li><a href="#rotas-t1">T001<p>CIDADE NOVA→UNIÃO→RIO VERDE→DA PAZ</p></a></li>
                                             <li><a href="#rotas-c1">C001<p>DA PAZ→RIO VERDE→CIDADE NOVA→ALTAMIRA</p></a></li>
-                                            <li><a href="#rotas-c2">C002 <p>PREFEITURA→P.DOS CARAJÀS→MINERIOS→ALTAMIRA</p></a></li>
+                                            <li><a href="#rotas-c2">C002 <p>PREFEITURA→P.DOS CARAJÁS→MINERIOS→ALTAMIRA</p></a></li>
                                             <li><a href="#rotas-ib2">IB002<p>PREFEITURA→ALTAMIRA→HABITAR FELIZ</p></a></li>
                                           </ul>
                                     </div>                                    
@@ -128,58 +163,62 @@ td {    border-right: 1px solid lightgray;}
                                             <li><a href="#rotas-c1">C001<p>MINERIOS→BEIRA RIO→DA PAZ→UNIÃO→CIDADE NOVA</p></a></li>
                                             <li><a href="#rotas-c2">C002 <p>ALTAMIRA→CIDADE NOVA→RIO VERDE→DA PAZ→GUANABARA→BEIRA RIO</p></a></li>
                                             <li><a href="#rotas-ib2">IB002<p>ALTAMIRA→PREFEITURA→RODOVIÁRIA</p></a></li>
-                                            <li><a href="#rotas-a3">A003<p>JARDIM TROPICAL</p></a></li>
-                                            <li><a href="#rotas-a4">A004<p>MINÉRIOS</p></a></li>
+                                            <li><a href="#rotas-ib3">IB003<p>JARDIM TROPICAL→ALTAMIRA→CIDADE NOVA</p></a></li>
                                           </ul>
                                     </div>
                                     
                                     <div data-role="collapsible">
                                         <h2>PORTARIA VALE</h2>
                                           <ul data-role="listview" data-inset="true">
-                                            <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                            <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
-                                            <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                            <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                            <li><a href="#rotas-a1">A001<p>LIBERDADE - CIDADE NOVA</p></a></li>
+                                            <li><a href="#rotas-c1">C001<p>ALTAMIRA→MINERIOS</p></a></li>
+                                            <li><a href="#rotas-c2">C002 <p>RIO VERDE→DA PAZ→GUANABARA→BEIRA RIO→MINERIOS</p></a></li>
+                                            <li><a href="#rotas-t1">T001<p>UNIÃO→RIO VERDE→DA PAZ→SHOPPING→CIDADE JARDIM</p></a></li>
+                                            <li><a href="#rotas-t2">T002<p>CIDADE NOVA→SHOPPING→CIDADE JARDIM</p></a></li>
+                                            <li><a href="#rotas-a1">A001<p>LIBERDADE⇆CIDADE NOVA</p></a></li>
+											<li><a href="#rotas-ib3">IB003<p>ALTAMIRA→JARDIM TROPICAL→HABITAR FELIZ</p></a></li>
                                           </ul>
                                     </div>                                   
                                     
                                     <div data-role="collapsible">
                                         <h2>RUA F</h2>
                                           <ul data-role="listview" data-inset="true">
-                                            <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                            <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
-                                            <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                            <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
+                                            <li><a href="#rotas-c1">C001<p>ALTAMIRA→MINERIOS</p></a></li>
+                                            <li><a href="#rotas-c2">C002 <p>RIO VERDE→DA PAZ→GUANABARA→BEIRA RIO→MINERIOS</p></a></li>
+                                            <li><a href="#rotas-t1">T001<p>UNIÃO→RIO VERDE→DA PAZ→SHOPPING→CIDADE JARDIM</p></a></li>
+                                            <li><a href="#rotas-t2">T002<p>CIDADE NOVA→SHOPPING→CIDADE JARDIM</p></a></li>
+											<li><a href="#rotas-ib3">IB003<p>ALTAMIRA→JARDIM TROPICAL→HABITAR FELIZ</p></a></li>
                                           </ul>
                                     </div>                                   
                                     
                                     <div data-role="collapsible">
                                         <h2>RUA SOL POENTE</h2>
                                           <ul data-role="listview" data-inset="true">
-                                            <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
-                                            <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                            <li><a href="#rotas-ib1">IB001<p>VS 10 - DA PAZ - RIO VERDE</p></a></li>
+                                            <li><a href="#rotas-c2">C002 <p>GUANABARA→BEIRA RIO→PREFEITURA→MINERIOS</p></a></li>
+                                            <li><a href="#rotas-t1">T001<p>SHOPPING→CIDADE JARDIM→MINERIOS</p></a></li>
+											<li><a href="#rotas-ib1-bv">IB001-BV<p>GUANABARA→VS10</p></a></li>
                                           </ul>
                                     </div>   
                                     
                                     <div data-role="collapsible">
                                         <h2>RUA MARABÁ</h2>
                                           <ul data-role="listview" data-inset="true">
-                                            <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                            <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
-                                            <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                            <li><a href="#rotas-ib1">IB001<p>VS 10 - DA PAZ - RIO VERDE</p></a></li>
+                                            <li><a href="#rotas-c1">C001<p>RIO VERDE→CIDADE NOVA→ALTAMIRA</p></a></li>
+                                            <li><a href="#rotas-t2">T002<p>SHOPPING→MINERIOS</p></a></li>
+											<li><a href="#rotas-ib1-bv">IB001-BV<p>RIO VERDE→UNIÃO→CIDADE NOVA</p></a></li>
+
                                           </ul>
                                     </div>   
                                     
                                     <div data-role="collapsible">
                                         <h2>SHOPPING</h2>
                                           <ul data-role="listview" data-inset="true">
-                                            <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                            <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                            <li><a href="#rotas-a2">A002<p>NOVA CARAJÁS - SHOPPING - W TORRES - AMAZONIA - NOVO BRASIL</p></a></li>
-                                            <li><a href="#rotas-a5">A005<p>ESTAÇÃO SHOPPING - UFRA</p></a></li>
+                                            <li><a href="#rotas-t1">T001<p>CIDADE JARDIM→MINÉRIOS</p></a></li>
+                                            <li><a href="#rotas-t1">T001<p>RODOVIARIA→CIDADE NOVA</p></a></li>
+                                            <li><a href="#rotas-t2">T002<p>CIDADE JARDIM→MINÉRIOS</p></a></li>
+                                            <li><a href="#rotas-t2">T002<p>DA PAZ→RIO VERDE→UNIÃO→CIDADE NOVA</p></a></li>
+                                            <li><a href="#rotas-a2">A002<p>→NOVA CARAJÁS</p></a></li>
+                                            <li><a href="#rotas-a2">A002<p>W TORRES→AMAZONIA→NOVO BRASIL</p></a></li>
+                                            <li><a href="#rotas-a5">A005<p>ESTAÇÃO SHOPPING⇆UFRA</p></a></li>
                                           </ul>
                                     </div>    
                                     
@@ -188,34 +227,25 @@ td {    border-right: 1px solid lightgray;}
                                           <ul data-role="listview" data-inset="true">
                                             <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - RODOVIARIA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
                                             <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                            <li><a href="#rotas-a3">A003<p>ESTAÇÃO MINÉRIOS - HABITAR FELIZ - JARDIM TROPICAL</p></a></li>
-                                            <li><a href="#rotas-a4">A004<p>ESTAÇÃO MINÉRIOS - HABITAR FELIZ</p></a></li>
-                                            <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                            <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
+                                            <li><a href="#rotas-c1">C001<p>BEIRA RIO→DA PAZ→RIO VERDE→CIDADE NOVA→ALTAMIRA</p></a></li>
+                                            <li><a href="#rotas-c2">C002 <p>ALTAMIRA→CIDADE NOVA→RIO VERDE→GUANABARA→BEIRA RIO</p></a></li>
                                           </ul>
                                     </div>
-
                                 </div>
-
                             </div>
-                                <div data-role="footer" class="ui-footer">
+                                <div data-role="footer" >
                                 <h5>©</h5>
                                 </div>
                             </div>    
 
 
-                
-                
-                
-                
-
+							
             <div data-role="page" id="casos">
             <div data-role="header">
                 <h1>DICAS - SOLUÇÕES</h1>
             <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
-                <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
+                <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide" data-direction="reverse" >Início</a>
             </div>
-
             <div  class="ui-content">
              <div style="height:100px; width:100%; margin:-15px;margin-rigth:-15px;position:absolute;  background: url('fundo_app.jpg') center center;"></div> 
 
@@ -229,14 +259,24 @@ td {    border-right: 1px solid lightgray;}
                                 <input id="autocomplete-input" data-type="search" placeholder="Em que bairro você está?">
                                 </form>
                  <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#autocomplete-input" data-inset="true">
-                <li><a href="#caso-1">RIO VERDE ⇆ MINÉRIOS<p>C001,C002</p></a></li>
-				<li><a href="#caso-1">DA PAZ ⇆ ALTAMIRA<p>C001,C002</p></a></li>
-				<li><a href="#caso-1">ALTAMIRA ⇆ CIDADE NOVA<p>C001,C002</p></a></li>
-				<li><a href="#caso-1">HABITAR FELIZ ⇆ RIO VERDE<p>C001,C002</p></a></li>
+                <li><a href="#caso-1">RIO VERDE ⇆ MINÉRIOS<p>C001 ou C002</p></a></li>
+				<li><a href="#rotas-c1">RIO VERDE→UNIÃO<p>C001</p></a></li>
+				<li><a href="#caso-1">DA PAZ⇆ALTAMIRA<p>C001,C002</p></a></li>
+				<li><a href="#rotas-c2">ALTAMIRA→CIDADE NOVA<p>C002</p></a></li>
+				<li><a href="#caso-1">HABITAR FELIZ ⇆ RIO VERDE<p>C001 ou C002</p></a></li>
+				<li><a href="#rotas-ib2">HABITAR FELIZ→RODOVIARIA<p>IB002</p></a></li>
+				<li><a href="#rotas-ib2">HABITAR FELIZ→PREFEITURA<p>IB002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→CIDADE NOVA<p>C002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→BETÂNIA<p>C002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→RIO VERDE<p>C002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→DA PAZ<p>C002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→NOVA VIDA<p>C002</p></a></li>
+				<li><a href="#rotas-c2">HABITAR FELIZ→GUANABARA<p>C002</p></a></li>
 				<li><a href="#rotas-c2">GUANABARA → MINÉRIOS<p>C002</p></a></li>
 				<li><a href="#rotas-c2">UNIÃO → GUANABARA<p>C002</p></a></li>~
 				<li><a href="#rotas-c1">UNIÃO → ALTAMIRA<p>C001</p></a></li>
 				<li><a href="#rotas-c1">DA PAZ → UNIÃO<p>C001</p></a></li>
+				<li><a href="#caso-2">DA PAZ→LIBERDADE<p>C001►A001</p></a></li>
 				<li><a href="#rotas-c2">GUANABARA → PREFEITURA<p>C002</p></a></li>
 				<li><a href="#rotas-c1">PREFEITURA → RIO VERDE<p>C001</p></a></li>
 				<li><a href="#rotas-c1">PREFEITURA → UNIÃO<p>C001</p></a></li>
@@ -244,16 +284,19 @@ td {    border-right: 1px solid lightgray;}
 				<li><a href="#rotas-c1">MINÉRIOS → PREFEITURA<p>C001</p></a></li>
 				<li><a href="#rotas-c1">MINÉRIOS → RODOVIÁRIA<p>C001</p></a></li>
 				<li><a href="#rotas-ib3">TROPICAL⇆CIDADE NOVA<p>IB003</p></a></li>
+				<li><a href="#rotas-ib3">TROPICAL⇆ALTAMIRA<p>IB003</p></a></li>
 				<li><a href="#rotas-ib1">GUANABARA→CIDADE NOVA<p>IB001</p></a></li>
-				<li><a href="#rotas-ib1">CIDADE NOVA→GUANABARA<p>IB001</p></a></li>
 				<li><a href="#rotas-ib1">GUANABARA→RIO VERDE<p>IB001</p></a></li>
 				<li><a href="#rotas-ib1">GUANABARA→DA PAZ<p>IB001</p></a></li>
+				<li><a href="#rotas-ib1">CIDADE NOVA→GUANABARA<p>IB001</p></a></li>
+				<li><a href="#rotas-t1">CIDADE NOVA→CIDADE JARDIM<p>T001</p></a></li>
+				<li><a href="#rotas-t2">CIDADE NOVA→CIDADE JARDIM<p>T002</p></a></li>
                                 </ul>
                         </div>
                     </div>
 
             </div>
-                <div data-role="footer" class="ui-footer">
+                <div data-role="footer" class="">
                 <h5>©</h5>
                 </div>
             </div>    
@@ -293,14 +336,21 @@ td {    border-right: 1px solid lightgray;}
                     <div data-role="content">	
 
                         <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                <div id="map-canvas">   <div id="clique" onclick="initialize();">Clique aqui para exibir o mapa</div></div>
+                                <div id="map-canvas" class="px-map">   <div id="clique" onclick="initialize();">Clique aqui para exibir o mapa</div></div>
                         </div>
                     </div>
                 <div data-role="content">	
-                    <B>MINÉRIOS - CIDADE JARDIM - PREFEITURA - CIDADE NOVA - RIO VERDE - DA PAZ</B>
+                    <B>MINÉRIOS→CIDADE JARDIM→SHOPPING→RODOVIARIA→CIDADE NOVA</B>
+					<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+					Minérios, Av. Principal do Bairro dos Minérios, Avenida Buritis, Av. D, Av. Q, Av. C, Avenida dos Ipês, Av. Ana Karina,Shopping, Avenida Ana Karina, Rodovia PA-275, Rua Perimetral Sul, Rua Rio Grande, Rua Rio Claro, Terminal Rodoviário, Av. Presidente Kennedy, Rodovia PA-275, Rua E, Rua 8, Rua A, Rua 2, Portaria Vale.
+					</div>    
+					<B>CIDADE NOVA→RIO VERDE→DA PAZ→SHOPPING→CIDADE JARDIM→MINERIOS</B>
+					<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+					Portaria Vale, Rua F, Rua 14, Rua N, Rua Sol Poente, Av. do Comércio, retorno no Complexo Esportivo, Av. JK, Rua Sol Poente, Rua Santa Maria, Av. Liberdade, Rodovia PA-275, Av. Ana Karina, Shopping, Av. Ana Karina, Av. dos Ipês, Av. C, Av. Q, Av. D, Av. Buritis, Avenida Principal do Bairro dos Minérios, Minérios.
+					</div>    
+				</div>
             </div>
-            </div>
-                <div data-role="footer">
+                <div data-role="footer" class="">
                 <h5>©</h5>
                 </div>
             </div>                        
@@ -333,16 +383,23 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-t2"> 
+                                                        <div id="map-t2" class="px-map"> 
                                                            <div id="clique" onclick="initialize2();">Clique aqui para exibir o mapa</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</B>
+											<B>MINÉRIOS→CIDADE JARDIM→SHOPPING→DA PAZ→RIO VERDE→CIDADE NOVA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+												Minérios, Av. Principal do Bairro dos Minérios, Avenida Buritis, Av. D, Avenida dos Ipês, Av. Ana Karina, Shopping, Avenida Ana Karina, Rodovia PA-275, Rua São Francisco, Rua Sol Poente, RuaMato Grosso, Rua Marabá, Rua Rio de Janeiro, Rua P, Rua 16, Rua F, Rotatória do Quartel, Rua E, Rua 8, Rua A, Rua 2, Portaria Vale.
+											</div>  
+											<B>CIDADE NOVA→SHOPPING→CIDADE JARDIM→MINÉRIOS</B>		
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+												Portaria Vale, Rua F, Avenida Liberdade, Rodovia PA-275, Av. Ana Karina, Shopping, Av. Ana Karina, Av. dos Ipês, Av. D, Av. Buritis, Av. Principal do Bairro dos Minérios, Minérios.
+											</div>  											
+										</div>
                                     </div>
-                                    </div>
-                                        <div data-role="footer">
+                                        <div data-role="footer" class="">
                                         <h5>©</h5>
                                         </div>
                                     </div>                                    
@@ -380,28 +437,16 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-a1">  <div id="clique" onclick="initialize3();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-a1"  class="px-map">  <div id="clique" onclick="initialize3();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>LIBERDADE - CIDADE NOVA</B>
+                                            <B>LIBERDADE⇆CIDADE NOVA</B>
+											
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+												Terminal, Avenida Pará, Rua Espírito Santo, Avenida Princesa Isabel, Rua Santa Catarina, Rua Olavo Bilac, Rua Vinicius de Moraes, Rua 11, Rua E, Rua 8, Rua A, Rua 2, Portaria Vale, Rua F, Rua 10, Rua Santa Catarina, Rua Olavo Bilac, Rua Vinicius de Moraes, Av. Pará, Terminal. 
+											</div>  	
                                     </div>
-                                                        <div data-role="collapsible">
-                                                            <h2>Todas as rotas...</h2>
-                                                              <ul data-role="listview" data-inset="true">
-                                                                <li><a href="#rotas-t1">T001<p>MINÉRIOS - CIDADE JARDIM - PREFEITURA - CIDADE NOVA - RIO VERDE - DA PAZ</p></a></li>
-                                                                <li><a href="#rotas-t2">T002<p>MINÉRIOS - CIDADE JARDIM - DA PAZ - RIO VERDE - CIDADE NOVA</p></a></li>
-                                                                <li><a href="#rotas-a1">A001<p>LIBERDADE - CIDADE NOVA</p></a></li>
-                                                                <li><a href="#rotas-a2">A002<p>NOVA CARAJÁS - SHOPPING - W TORRES - AMAZONIA - NOVO BRASIL</p></a></li>
-                                                                <li><a href="#rotas-a3">A003<p>ESTAÇÃO MINÉRIOS - HABITAR FELIZ - JARDIM TROPICAL</p></a></li>
-                                                                <li><a href="#rotas-a4">A004<p>ESTAÇÃO MINÉRIOS - HABITAR FELIZ</p></a></li>
-                                                                <li><a href="#rotas-a5">A005<p>ESTAÇÃO SHOPPING - UFRA</p></a></li>
-                                                                <li><a href="#rotas-ib1">IB001<p>VS 10 - DA PAZ - RIO VERDE</p></a></li>
-                                                                <li><a href="#rotas-ib2">IB002<p>HABITAR FELIZ - ALTAMIRA - PREFEITURA - RODOVIÁRIA</p></a></li>
-                                                                <li><a href="#rotas-c1">C001<p>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</p></a></li>
-                                                                <li><a href="#rotas-c2">C002 <p>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</p></a></li>
-                                                                </ul>
-                                                        </div>
                                         
                                     </div>
                                         <div data-role="footer" class="ui-footer">
@@ -438,14 +483,21 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-a2">  <div id="clique" onclick="initialize4();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-a2"  class="px-map">  <div id="clique" onclick="initialize4();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>NOVA CARAJÁS - SHOPPING - W TORRES - AMAZONIA - NOVO BRASIL</B>
+                                            <B>NOVA CARAJÁS→SHOPPING→W TORRES→AMAZONIA→NOVO BRASIL</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Av. Parauapebas, Av. Nova Carajás, Av. Serra dos Buritis, Av. Serra Norte, Av. Carajás, Rua 70, Av. Parauapebas, Av. Serra Arqueada, Av. Nova Carajás, Rodovia PA-275, Av. Ana Karina, Estação Shopping (Integração), WTorres, Rua A5, Rua A10, Rua Evaristo Flauzino, Rodovia PA-160, Rua VS11, Rua Hamilton Ribeiro, Rua Manoel de Sousa.
+											</div>
+											 <B>NOVO BRASIL→SHOPPING→NOVA CARAJÁS</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Rodovia PA-275, Av. Ana Karina, Shopping, Av. Ana Karina, Rodovia PA-275, Av. Nova Carajás, Av. Serra Arqueada, Av. Parauapebas, Rua 70, Av. Carajás, Av. Serra Norte, Av. Serra dos Buritis, Av. Nova Carajás.
+											</div>
+								  </div>
                                     </div>
-                                    </div>
-                                        <div data-role="footer" class="ui-footerp">
+                                        <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>                                   
@@ -460,15 +512,8 @@ td {    border-right: 1px solid lightgray;}
                                         <p><small><b>F/C</b>=Fretamento/Coletivo<BR><b>TA</b>=Táxi<BR><b>MT</b>=Moto-Táxi <BR> <b>CL</b>=Coletivo <BR> <b>TE</b>=Transp. Escolar <BR> <b>MF</b>=Moto-Frete <BR>                                                                  <b>X</b>=Clandestino <BR> </small> </p>
                                           <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
                                     </div> 	
-                                    <div data-role="panel"  id="menu"> 
-                                    <h2>Navegue</h2>
-                                         <a href="#inicio" class="ui-btn ui-shadow">Consultar Infração</a>
-                                        <!-- <a href="#page_cat" class="ui-btn ui-shadow">Conmsultar CAT</a>-->
-                                     <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ">Fechar</a>
-                                    </div> 
-
                                     <div data-role="header">
-                                        <h1>ITINERÁRIO: A003</h1>
+                                        <h1>ITINERÁRIO: IB003</h1>
                                     <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
                                         <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
                                     </div>
@@ -480,62 +525,24 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-ib3">  <div id="clique" onclick="initialize5();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-ib3"  class="px-map">  <div id="clique" onclick="initialize5();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
-                                        <div data-role="content">	
-                                            <B>JARDIM TROPICAL→ALTAMIRA→CIDADE→NOVA</B>
+                                    <div data-role="content">	
+                                            <B>JARDIM TROPICAL→ALTAMIRA→CIDADE NOVA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Habitar Heliz, PA-160, Av. Castanheira, Rua A, Rua A21, Rua B, Rua C8, Rua C, Av. Jatobá, Retorno no muro, Av. Jatobá, Av. Castanheira, PA-160, Rua Espanha, Av. Havana, Rua Amsterdam, Rua Pedro Álvares  Cabral, Av. Bom Jesus, Rua Bartolomeu, Rua Rei David, Rua Novo Paraíso, Rua Bom Jesus, Rua Bartolomeu, Av. Inglaterra, Rod. Faruk Salmen, Rua A, Rua 2, Portaria Vale.
+											</div>
+											<B>CIDADE NOVA→ALTAMIRA→JARDIM TROPICAL</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Portaria Vale, Rua F, Rotatória Rua 14, Rod. Faruk Salmen, Av.Inglaterra, Rua Bartolomeu, Av. Bom Jesus, Rua Novo Paraíso,Rua Rei David, Rua Bartolomeu, Av. Bom Jesus, Rua Pedro Álvares Cabral,  Rua Amsterdã, Avenida Havana, PA-160, Av. Castanheira, Rua A,Rua A21, Rua B, Rua C8, Rua C, Av. Jatobá, Retorno no muro, Av. Jatobá, Av. Castanheira, PA-160, Habitar Feliz. 
+											</div>
                                     </div>
                                     </div>
                                         <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>
-
-
-
-
-                                            
-                                    
-                                    <div data-role="page" id="rotas-a4">
-                                    <div data-role="panel" id="myPanel" data-position="right"> 
-                                            <h2>Nomeclaturas</h2>
-                                        <p><b>Siglas que aparecem na primeira coluna da consulta.</b></p>
-                                        <p><small><b>F/C</b>=Fretamento/Coletivo<BR><b>TA</b>=Táxi<BR><b>MT</b>=Moto-Táxi <BR> <b>CL</b>=Coletivo <BR> <b>TE</b>=Transp. Escolar <BR> <b>MF</b>=Moto-Frete <BR>                                                                  <b>X</b>=Clandestino <BR> </small> </p>
-                                          <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
-                                    </div> 	
-                                    <div data-role="panel"  id="menu"> 
-                                    <h2>Navegue</h2>
-                                         <a href="#inicio" class="ui-btn ui-shadow">Consultar Infração</a>
-                                        <!-- <a href="#page_cat" class="ui-btn ui-shadow">Conmsultar CAT</a>-->
-                                     <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ">Fechar</a>
-                                    </div> 
-
-                                    <div data-role="header">
-                                        <h1>ITINERÁRIO: A004</h1>
-                                    <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
-                                        <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
-                                    </div>
-                                    <BR>
-
-                                    <div  class="ui-content">
-                                    <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:33px; ">Destinos</a>
-                                    <a href="#local" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-location ui-btn-icon-left "  style="padding:5px; padding-left:33px; ">Sua Integração</a>
-                                    <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
-                                            <div data-role="content">	
-                                                <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-a4">  <div id="clique" onclick="initialize6();">Clique aqui para exibir o mapa</div></div>
-                                                </div>
-                                            </div>
-                                        <div data-role="content">	
-                                            <B>ESTAÇÃO MINÉRIOS - HABITAR FELIZ</B>
-                                    </div>
-                                    </div>
-                                        <div data-role="footer" class="ui-footer">
-                                        <h5>©</h5>
-                                        </div>
-                                    </div>
-
 
 
 
@@ -568,14 +575,17 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-a5">  <div id="clique" onclick="initialize7();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-a5"  class="px-map">  <div id="clique" onclick="initialize7();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>ESTAÇÃO SHOPPING - UFRA</B>
+                                            <B>ESTAÇÃO SHOPPING⇆UFRA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+												Shopping (Integração), Avenida Ana Karina, Rodovia PA-275, Estrada para o Campus UFRA de Parauapebas, retorno no Portão Principal da UFRA, Estrada para o Campus UFRA de Parauapebas, Rodovia PA-275, Avenida Ana Karina, Shopping. 
+											</div>
+										</div>
                                     </div>
-                                    </div>
-                                        <div data-role="footer" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                                        <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>
@@ -587,7 +597,7 @@ td {    border-right: 1px solid lightgray;}
 
                                             
                                     
-                                    <div data-role="page" id="rotas-ib1">
+                                    <div data-role="page" id="rotas-ib1-nv">
                                     <div data-role="panel" id="myPanel" data-position="right"> 
                                             <h2>Nomeclaturas</h2>
                                         <p><b>Siglas que aparecem na primeira coluna da consulta.</b></p>
@@ -602,7 +612,7 @@ td {    border-right: 1px solid lightgray;}
                                     </div> 
 
                                     <div data-role="header">
-                                        <h1>ITINERÁRIO: IB001</h1>
+                                        <h1>IB001 - NOVA VIDA</h1>
                                     <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
                                         <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
                                     </div>
@@ -614,14 +624,73 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-ib1">  <div id="clique" onclick="initialize8();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-ib1-nv"  class="px-map">  <div id="clique" onclick="initialize8();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>VS 10 - DA PAZ - RIO VERDE</B>
+                                            <B>VS 10→NOVA VIDA→RIO VERDE→UNIÃO→CIDADE NOVA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Loteamento Brasilia, VS-10, Av. Paulo Afonso, Daniela Peres,  Rua das Mangueiras,  Rua Stª Rita, Rua JK, Rua Rio de Janeiro, Rua 16, Rua E, Rua8, Rua A, Rua 2, Portaria Vale.   
+											</div>                                         
+											
+											<B>CIDADE NOVA→RIO VERDE→DA PAZ→VS10</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Portaria Vale, Rua F, Av. Liberdade, Av. do Comércio, Complexo, Rua Valdir da Usina, Rua Ayrton Sena, Rua Daniela Peres, Av. Bom Jardim, Rua Paulo Maranhão, VS-10, Loteamento Brasilia.
+											</div>
+											
                                     </div>
                                     </div>
-                                        <div data-role="footer" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                                        <div data-role="footer" class="ui-footer">
+                                        <h5>©</h5>
+                                        </div>
+                                    </div>
+
+                         
+                                            
+                                    
+                                    <div data-role="page" id="rotas-ib1-bv">
+                                    <div data-role="panel" id="myPanel" data-position="right"> 
+                                            <h2>Nomeclaturas</h2>
+                                        <p><b>Siglas que aparecem na primeira coluna da consulta.</b></p>
+                                        <p><small><b>F/C</b>=Fretamento/Coletivo<BR><b>TA</b>=Táxi<BR><b>MT</b>=Moto-Táxi <BR> <b>CL</b>=Coletivo <BR> <b>TE</b>=Transp. Escolar <BR> <b>MF</b>=Moto-Frete <BR>                                                                  <b>X</b>=Clandestino <BR> </small> </p>
+                                          <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
+                                    </div> 	
+                                    <div data-role="panel"  id="menu"> 
+                                    <h2>Navegue</h2>
+                                         <a href="#inicio" class="ui-btn ui-shadow">Consultar Infração</a>
+                                        <!-- <a href="#page_cat" class="ui-btn ui-shadow">Conmsultar CAT</a>-->
+                                     <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ">Fechar</a>
+                                    </div> 
+
+                                    <div data-role="header">
+                                        <h1>IB001 - BELA VISTA</h1>
+                                    <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
+                                        <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
+                                    </div>
+                                    <BR>
+
+                                    <div  class="ui-content">
+                                    <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:33px; ">Destinos</a>
+                                    <a href="#local" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-location ui-btn-icon-left "  style="padding:5px; padding-left:33px; ">Sua Integração</a>
+                                    <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
+                                            <div data-role="content">	
+                                                <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+                                                        <div id="map-ib1-bv"  class="px-map">  <div id="clique" onclick="initialize8bv();">Clique aqui para exibir o mapa</div></div>
+                                                </div>
+                                            </div>
+                                        <div data-role="content">	
+                                            <B>VS 10→BELA VISTA→DA PAZ→RIO VERDE→UNIÃO→CIDADE NOVA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Loteamento Brasilia, Estrada VS-10, Av. Paulo Afonso, Rua Leandro Pinheiro, Av. Bom Jardim, Rua Marabá,Rua Rio de Janeiro,  Rua 16, Rua E, Rua8, Rua A, Rua 2, Portaria Vale.   
+											</div>     
+											<B>CIDADE NOVA→UNIÃO→RIO VERDE→DA PAZ→VS10</B>		
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Portaria Vale, Rua F, Rua 14, Rua N, Rua Sol Poente, Rua Mato Grosso, Rua Rui Barbosa, Av. Bom Jardim, Rua Paulo Maranhão, Estrada VS-10, Loteamento Brasilia. 
+											</div>
+											
+                                    </div>
+                                    </div>
+                                        <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>
@@ -660,12 +729,20 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-ib2">  <div id="clique" onclick="initialize9();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-ib2"  class="px-map">  <div id="clique" onclick="initialize9();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>HABITAR FELIZ - ALTAMIRA - PREFEITURA - RODOVIÁRIA</B>
-                                    </div>
+                                            <B>SOMENTE: 07:00 as 09:00</B><BR><BR>
+                                            <B>HABITAR FELIZ→ALTAMIRA→PREFEITURA→RODOVIÁRIA</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Terminal (Habitar Feliz), PA-160, Rotatória Tropical, Av. Espanha, R. Rio Uruguai, R. Iguaçú, R. Parnaíba, R. Amaparí, Av. Pitinga, R. Ipiranga, Av. Rio Novo, R. Ipiranga, R. Rio Jordão, Av. P. Alvares Cabral, Av. B. Jesus, R. Bartolomeu, Av. Inglaterra, Rod. Faruk Salmen, Av. J, Rotatória, PMP,  Rotatória, Rua 69, Av. A, Av. 70, Av. 120, Av. 138, R. G, R. Rio Grande, R. Rio Claro, Rodoviária. 
+											</div>
+											<B>RODOVIÁRIA→PREFEITURA→ALTAMIRA→HABITAR FELIZ</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Terminal, Av. Pres. Kennedy, R. Rio Dourado, Rua R. Grande, Av120, Av.70, Av.A, Rua 69, Rotatória, PMP, Rotatória, Av. J, Rod. Faruk Salmen, Av. Inglaterra, R. Bartolomeu, Av. B. Jesus, Av. P. Alvares Cabral, R. Rio Jordão, R. Ipiranga, Av. Rio Novo, R. Ipiranga, Av. Pitinga, R. Amaparí, R. Parnaíba, R. Iguaçú,R. Rio Uruguai, R. Espanha, PA-160 e Terminal (Habitar Feliz).
+											</div>
+										</div>
                                     </div>
                                         <div data-role="footer" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
                                         <h5>©</h5>
@@ -704,16 +781,22 @@ td {    border-right: 1px solid lightgray;}
                                     <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:33px; ">Destinos</a>
                                     <a href="#local" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-location ui-btn-icon-left "  style="padding:5px; padding-left:33px; ">Sua Integração</a>
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
-                                            <div data-role="content">	
-                                                <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-c1">  <div id="clique" onclick="initialize10();">Clique aqui para exibir o mapa</div></div>
-                                                </div>
+                                            <div data-role="content" class="ui-shadow">	
+                                                <!-- <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;"> -->
+                                                        <div id="map-c1" class="px-map" >  <div id="clique" onclick="initialize10();">Clique aqui para exibir o mapa</div></div>
+												<!-- </div> -->
                                             </div>
-                                        <div data-role="content">	
-                                            <B>MINÉRIOS - BEIRA RIO - BAIRRO DA PAZ - CIDADE NOVA - ALTAMIRA</B>
+                                        <div data-role="content" class="ui-shadow">	
+                                        <B>MINÉRIOS→PARQUE DOS CARAJÁS→BEIRA RIO→DA PAZ→RIO VERDE→UNIÃO→CIDADE NOVA→ALTAMIRA→VILA RICA→HABITAR FELIZ</B>
+										
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Estação Minérios, Av. Principal do Bairro dos Minérios, Avenida F-26, PA-160, Avenida Potiguar, Avenida E, Rua A, Rua 69, Rotatória, PMP, Rotatória, Rua 69, Av. A, Rua 70, Avenida 120, R. 138, Av. G, Av. Rio Grande, Rua Rio Claro, Rodoviária, Av. Pte. Kenedy,
+											Rodovia PA-275, Retorno Rua Fortaleza, Av.Liberdade, Rua São Francisco, Rua Sol Poente, Rua Mato Grosso, Rua Rio Barbosa, Rua Bom Jardim, Rua Paulo Maranhão, VS 10, Rua Paulo Afonso, Rua Marabá, Rua Rio de Janeiro, Rua P, Rua 16, Rua F, Retorno no Quartel, Rua E, Rua 8, Rua A, Rua 2, Portaria Vale, Rua F, Rotatória Rua 14, Rod. Faruk Salmen, Avenida Inglaterra, Rua Bartolomeu, Avenida Bom Jesus, Rua Novo Paraíso, Rua Rei David, Rua Bartolomeu, Av. Bom Jesus, Rua Pedro Álvares Cabral, Rua Amsterdã, Avenida Havana, Rua Espanha, PA-160, Minérios.
+											</div>
+											
+                                        </div>
                                     </div>
-                                    </div>
-                                        <div data-role="footer" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                                        <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>
@@ -721,23 +804,9 @@ td {    border-right: 1px solid lightgray;}
 
 
 
-
-
                                             
                                     
                                     <div data-role="page" id="rotas-c2">
-                                    <div data-role="panel" id="myPanel" data-position="right"> 
-                                            <h2>Nomeclaturas</h2>
-                                        <p><b>Siglas que aparecem na primeira coluna da consulta.</b></p>
-                                        <p><small><b>F/C</b>=Fretamento/Coletivo<BR><b>TA</b>=Táxi<BR><b>MT</b>=Moto-Táxi <BR> <b>CL</b>=Coletivo <BR> <b>TE</b>=Transp. Escolar <BR> <b>MF</b>=Moto-Frete <BR>                                                                  <b>X</b>=Clandestino <BR> </small> </p>
-                                          <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left">Fechar</a>
-                                    </div> 	
-                                    <div data-role="panel"  id="menu"> 
-                                    <h2>Navegue</h2>
-                                         <a href="#inicio" class="ui-btn ui-shadow">Consultar Infração</a>
-                                        <!-- <a href="#page_cat" class="ui-btn ui-shadow">Conmsultar CAT</a>-->
-                                     <a href="#page_cat" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-delete ui-btn-icon-left ">Fechar</a>
-                                    </div> 
 
                                     <div data-role="header">
                                         <h1>ITINERÁRIO: C002</h1>
@@ -752,14 +821,17 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
-                                                        <div id="map-c2">  <div id="clique" onclick="initialize11();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="map-c2"  class="px-map">  <div id="clique" onclick="initialize11();">Clique aqui para exibir o mapa</div></div>
                                                 </div>
                                             </div>
                                         <div data-role="content">	
-                                            <B>MINÉRIOS - ALTAMIRA - CIDADE NOVA - RIO VERDE - GUANABARA - BEIRA RIO</B>
+                                            <B>MINÉRIOS→ALTAMIRA→CIDADE NOVA→UNIÃO→RIO VERDE→DA PAZ→GUANABARA→BEIRA RIO</B>
+											<div class="ui-bar-c ui-corner-all ui-shadow" style="padding:3px;">
+											Minérios, Av. Principal do Bairro dos Minérios, Avenida F-26, PA-160, Avenida Potiguar, Avenida E, Rua A, Rua 69, Rotatória, PMP, Rotatória, Rua 69, Av. A, Rua 70, Avenida 120, R. 138, Av. G, Av. Rio Grande, Rua Rio Claro, Rodoviária, Av. Pte. Kenedy, Rodovia PA-275, Retorno Rua Fortaleza, Av.Liberdade, Rua São Francisco, Rua Sol Poente, Rua Mato Grosso, Rua Rio Barbosa, Rua Bom Jardim, Rua Paulo Maranhão, Rua VS 10, Rua Paulo Afonso, Rua Marabá, Rua Rio de Janeiro, Rua P, Rua 16, Rua F, Retorno no Quartel, Rua E, Rua 8, Rua A, Rua 2, Portaria Vale, Rua F, Rotatória Rua 14, Rod. Faruk Salmen, Avenida Inglaterra, Rua Bartolomeu, Avenida Bom Jesus, Rua Novo Paraíso, Rua Rei David, Rua Bartolomeu, Av. Bom Jesus, Rua Pedro Álvares Cabral, Rua Amsterdã, Avenida Havana, Rua Espanha, PA-160, Minérios.
+											</div>
                                     </div>
                                     </div>
-                                        <div data-role="footer" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                                        <div data-role="footer" class="ui-footer">
                                         <h5>©</h5>
                                         </div>
                                     </div>
@@ -782,14 +854,14 @@ td {    border-right: 1px solid lightgray;}
                                     <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
                                             <div data-role="content">	
                                                 <div class="ui-bar-c ui-corner-all ui-shadow"  style="padding:1px; margin:-10;">
-                                                        <div id="caso1">  <div id="clique" onclick="caso1();">Clique aqui para exibir o mapa</div></div>
+                                                        <div id="caso1"  class="px-map">  <div id="clique" onclick="caso1();">Clique aqui para exibir o mapa</div></div>
 						<small><small>! Pressione sobre a linha para identificá-la.</small></small>
 						</div>                                          
                                             </div>
                                         <div data-role="content">	
 						
                                             <B>C001, C002</B><BR>
-					Nesta solução você poderá ter acesso direto a vários bairro da cidade  através das linhas Circulares. Fique atento de onde você está embarcando.
+									Nesta solução você poderá ter acesso direto a vários bairro da cidade  através das linhas Circulares. Fique atento de onde você está embarcando.
 
                                     </div>
                                     </div>
@@ -797,5 +869,40 @@ td {    border-right: 1px solid lightgray;}
                                         <h5>©</h5>
                                         </div>
                                     </div>
+									
+									
+									
+									
+                                    <div data-role="page" id="caso-2">
+                                    <div data-role="header">
+                                        <h1>C001►A001</h1>
+                                    <!--<a href="#page" class="ui-btn-left ui-icon-home ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all" data-transition="slide">Início</a>-->
+                                        <a href="#rotas" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext" data-transition="slide">Início</a>
+                                    </div>
+                                    <BR>
+
+                                    <div  class="ui-content">
+                                    <a href="#casos" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-search ui-btn-icon-left" style="padding:5px; padding-left:33px; ">Destinos</a>
+                                    <a href="#local" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-icon-location ui-btn-icon-left "  style="padding:5px; padding-left:33px; ">Sua Integração</a>                                         <BR>
+					               <small>Temos vários casos de integração pré definidos para sua melhor decisão.</small>
+                                    <!-- <a href="#menu" class="ui-btn ui-icon-bullets  ui-btn-inline ui-btn-icon-left  ui-shadow ui-corner-all">Menu</a><BR> -->
+                                            <div data-role="content">	
+                                                <div class="ui-bar-c ui-corner-all ui-shadow"  style="padding:1px; margin:-10;">
+                                                        <div id="caso2"  class="px-map">  <div id="clique" onclick="caso2();">Clique aqui para exibir o mapa</div></div>
+						<small><small>! Pressione sobre a linha para identificá-la.</small></small>
+						</div>                                          
+                                            </div>
+                                        <div data-role="content">	
+						
+                                            <B>C001►A001</B><BR>
+										Integração entre C001 e A001
+
+                                    </div>
+                                    </div>
+                                        <div data-role="footer" data-position="fixed" class="ui-footer ui-bar-inherit ui-footer-fixed slideup">
+                                        <h5>©</h5>
+                                        </div>
+                                    </div>
+									
 </div>
 </html>
